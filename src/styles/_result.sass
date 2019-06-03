@@ -1,0 +1,48 @@
+.resultList
+    width: 90%
+    margin:   0 auto
+    padding-bottom: 2vh
+    padding-left: 0
+    list-style-type: decimal
+
+.result
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: space-between
+    flex-grow: 1
+    padding: 15px 0 15px 0
+    text-transform: capitalize
+    border-bottom: 1px solid #ddd
+
+
+
+.result::before 
+    counter-increment: li
+    content: counter(li)
+    display: flex
+    align-self: center
+    flex-basis: 5%
+    padding-left: 10px
+
+.result::before 
+    counter-increment: counter
+    content: counter(counter) ". "
+
+   
+.result__city
+    flex-basis: 30%
+    text-decoration: none
+    color: #0080ff
+    text-transform: capitalize
+
+.result__delete
+    border: 1px solid red
+    background-color: transparent
+    color: red
+    padding: 5px 40px
+    border-radius: 5px
+
+.result__temp    
+    text-align: left
+    flex-basis: 30%
