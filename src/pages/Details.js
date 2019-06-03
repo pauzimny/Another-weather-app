@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Details = ({ location }) => {
   return (
-    <>
+    <React.Fragment>
       <h2 className="details__city">{location.state.city}</h2>
       <ul className="details__list">
         <li className="details__details">
@@ -39,7 +39,7 @@ const Details = ({ location }) => {
           Powrót
         </button>
       </Link>
-    </>
+    </React.Fragment>
   );
 };
 

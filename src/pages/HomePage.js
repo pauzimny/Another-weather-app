@@ -66,7 +66,6 @@ const HomePage = props => {
           })
 
           .catch(() => {
-            // setError(true);
             setInput("");
           });
       } else {

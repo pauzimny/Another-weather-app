@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Fragment>
+  <h2
+    className="settings__header"
+  >
+    ustawienia
+  </h2>
+  <h3
+    className="settings__unit"
+  >
+    jednostka:
+  </h3>
+  <ul
+    className="settings__list"
+  >
+    <li
+      className="settings__list-unit"
+    >
+      <label>
+        <input
+          checked={true}
+          onChange={[Function]}
+          type="radio"
+          value="metric"
+        />
+        C
+      </label>
+    </li>
+    <li
+      className="settings__list-unit"
+    >
+       
+      <label>
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="radio"
+          value="imperial"
+        />
+        F
+      </label>
+    </li>
+  </ul>
+  <div
+    className="settings__button-container"
+  >
+    <Link
+      to={
+        Object {
+          "pathname": "/",
+          "state": Object {
+            "list": Array [],
+            "units": "metric",
+          },
+        }
+      }
+    >
+      <button
+        className="settings__button back"
+      >
+         
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon="arrow-circle-left"
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          style={
+            Object {
+              "paddingRight": "5px",
+            }
+          }
+          symbol={false}
+          title=""
+          transform={null}
+        />
+        Powrót
+      </button>
+    </Link>
+    <button
+      className="settings__button save"
+      onClick={[Function]}
+    >
+      zapisz
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon="check-circle"
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        style={
+          Object {
+            "paddingLeft": "5px",
+          }
+        }
+        symbol={false}
+        title=""
+        transform={null}
+      />
+    </button>
+  </div>
+</Fragment>
+`;
