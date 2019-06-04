@@ -22,7 +22,7 @@ const Settings = props => {
   const handleSaveClick = () => {
     if (newInput) {
       newInput.forEach(input => {
-        const API = `http://api.openweathermap.org/data/2.5/forecast?q=${
+        const API = `https://api.openweathermap.org/data/2.5/forecast?q=${
           input.name
         }&lang=pl&units=${checked}&appid=${APIKEY}`;
 

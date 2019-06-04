@@ -31,7 +31,7 @@ const HomePage = props => {
         city => city.name.toLowerCase() === input.toLowerCase()
       );
       if (index === -1) {
-        const API = `http://api.openweathermap.org/data/2.5/forecast?q=${input}&lang=pl&units=${units}&appid=${APIKEY}`;
+        const API = `https://api.openweathermap.org/data/2.5/forecast?q=${input}&lang=pl&units=${units}&appid=${APIKEY}`;
 
         console.log(input);
         fetch(API)
