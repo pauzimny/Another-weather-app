@@ -6,16 +6,13 @@ const Settings = props => {
   const APIKEY = "1ea9d8ecd83d43c9a0801ba96a6b4ae1";
   let sendTable = [];
   let tempArray = [];
-  console.log(props);
+
   const [checked, setChecked] = useState("metric");
   const [newRes, setNewRes] = useState([]);
-  console.log(checked);
-  // units metric or imperial
 
   let newInput = JSON.parse(localStorage.getItem("cities"));
 
   const handleCheckedChange = changeEvent => {
-    console.log("check!");
     setChecked(changeEvent.target.value);
   };
 
@@ -52,9 +49,6 @@ const Settings = props => {
             sendTable.push(city);
             setNewRes([...newRes, sendTable]);
             localStorage.setItem("cities", JSON.stringify(sendTable));
-            console.log(sendTable);
-            console.log(city);
-            console.log(newRes);
           });
       });
     }

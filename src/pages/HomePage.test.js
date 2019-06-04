@@ -2,7 +2,6 @@ import HomePage from "./HomePage.js";
 import React from "react";
 import { shallow, render, mount } from "enzyme";
 import toJson from "enzyme-to-json";
-import sinon from "sinon";
 
 it("renders correctly", () => {
   const wrapper = shallow(

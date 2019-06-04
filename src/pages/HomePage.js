@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Result from "../components/Result.js";
 import Form from "../components/Form.js";
-import NotFound from "../components/NotFound";
-import IsAlready from "../components/IsAlready";
+import Message from "../components/Message";
 
 const HomePage = props => {
   const APIKEY = "1ea9d8ecd83d43c9a0801ba96a6b4ae1";
@@ -15,14 +14,9 @@ const HomePage = props => {
   const [input, setInput] = useState("");
   const [results, setResults] = useState([...initialResults]);
   const [getData, setGetData] = useState(false);
-  console.log(error);
-
-  console.log(props);
-  console.log(getData);
-  console.log(units);
+  const [msg, setMsg] = useState();
 
   useEffect(() => {
-    console.log(units);
     if (props.location.state !== undefined) {
       setUnits(props.location.state.units);
     }
@@ -40,6 +34,9 @@ const HomePage = props => {
               return response.json();
             }
             setError(true);
+            setMsg(
+              `Miasto nie istnieje w bazie lub nie mozna pobrać danych dla miasta ${input}`
+            );
             throw Error(`Nie mozna pobrać danych dla miasta ${input}`);
           })
           .then(data => {
@@ -56,20 +53,16 @@ const HomePage = props => {
               lon: data.city.coord.lon,
               lat: data.city.coord.lat
             };
-            console.log(city);
             setResults([...results, city]);
-            console.log(results);
             setInput("");
             setGetData(false);
-            console.log(results);
-            console.log("sent");
           })
-
           .catch(() => {
             setInput("");
           });
       } else {
         setIsAlready(true);
+        setMsg("To miasto jest juz na liście");
         setInput("");
         setError(false);
         setGetData(false);
@@ -83,6 +76,7 @@ const HomePage = props => {
     setIsAlready(false);
     setError(false);
     setGetData(false);
+    setMsg("");
   };
 
   const handleSubmit = e => {
@@ -98,9 +92,6 @@ const HomePage = props => {
     setResults([...cities]);
     window.localStorage.setItem("cities", JSON.stringify(cities));
   };
-
-  console.log(results);
-  console.log(initialResults);
 
   const citiesResults = results.map(result => (
     <Result
@@ -119,8 +110,8 @@ const HomePage = props => {
   return (
     <div>
       <Form submit={handleSubmit} change={handleChange} value={input} />
-      {error && <NotFound />}
-      {isAlready && <IsAlready />}
+      {error && <Message msg={msg} />}
+      {isAlready && <Message msg={msg} />}
       <ol className="resultList">{citiesResults}</ol>
     </div>
   );

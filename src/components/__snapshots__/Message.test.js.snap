@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="message"
+>
+  You hava some message
+</div>
+`;
+
+exports[`renders correctly 2`] = `
+<div
+  class="message"
+>
+  You hava some message
+</div>
+`;
+
+exports[`renders correctly 3`] = `
+<Message
+  msg="You hava some message"
+>
+  <div
+    className="message"
+  >
+    You hava some message
+  </div>
+</Message>
+`;
