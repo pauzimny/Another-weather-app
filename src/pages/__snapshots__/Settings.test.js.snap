@@ -1,121 +1,206 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<Fragment>
-  <h2
-    className="settings__header"
-  >
-    ustawienia
-  </h2>
-  <h3
-    className="settings__unit"
-  >
-    jednostka:
-  </h3>
-  <ul
-    className="settings__list"
-  >
-    <li
-      className="settings__list-unit"
-    >
-      <label>
-        <input
-          checked={true}
-          onChange={[Function]}
-          type="radio"
-          value="metric"
-        />
-        C
-      </label>
-    </li>
-    <li
-      className="settings__list-unit"
-    >
-       
-      <label>
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="radio"
-          value="imperial"
-        />
-        F
-      </label>
-    </li>
-  </ul>
-  <div
-    className="settings__button-container"
-  >
-    <Link
-      to={
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "canGo": [Function],
+      "createHref": [Function],
+      "entries": Array [
         Object {
+          "hash": "",
+          "key": "mnx6j4",
           "pathname": "/",
-          "state": Object {
-            "list": Array [],
-            "units": "metric",
+          "search": "",
+          "state": undefined,
+        },
+      ],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "index": 0,
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "key": "mnx6j4",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Settings
+    checked="metric"
+    onChange={[Function]}
+    onClick={[Function]}
+  />
+</Router>
+`;
+
+exports[`renders correctly again 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "s08bjz",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
           },
-        }
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "s08bjz",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
       }
-    >
-      <button
-        className="settings__button back"
-      >
-         
-        <FontAwesomeIcon
-          border={false}
-          className=""
-          fixedWidth={false}
-          flip={null}
-          icon="arrow-circle-left"
-          inverse={false}
-          listItem={false}
-          mask={null}
-          pull={null}
-          pulse={false}
-          rotation={null}
-          size={null}
-          spin={false}
-          style={
-            Object {
-              "paddingRight": "5px",
-            }
-          }
-          symbol={false}
-          title=""
-          transform={null}
-        />
-        Powrót
-      </button>
-    </Link>
-    <button
-      className="settings__button save"
+    }
+  >
+    <Settings
+      checked="metric"
+      onChange={[Function]}
       onClick={[Function]}
     >
-      zapisz
-      <FontAwesomeIcon
-        border={false}
-        className=""
-        fixedWidth={false}
-        flip={null}
-        icon="check-circle"
-        inverse={false}
-        listItem={false}
-        mask={null}
-        pull={null}
-        pulse={false}
-        rotation={null}
-        size={null}
-        spin={false}
-        style={
-          Object {
-            "paddingLeft": "5px",
+      <h2
+        className="settings__header"
+      >
+        ustawienia
+      </h2>
+      <h3
+        className="settings__unit"
+      >
+        jednostka:
+      </h3>
+      <ul
+        className="settings__list"
+      >
+        <li
+          className="settings__list-unit"
+        >
+          <label>
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="radio"
+              value="metric"
+            />
+            C
+          </label>
+        </li>
+        <li
+          className="settings__list-unit"
+        >
+           
+          <label>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+              value="imperial"
+            />
+            F
+          </label>
+        </li>
+      </ul>
+      <div
+        className="settings__button-container"
+      >
+        <Link
+          to={
+            Object {
+              "pathname": "/",
+            }
           }
-        }
-        symbol={false}
-        title=""
-        transform={null}
-      />
-    </button>
-  </div>
-</Fragment>
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <button
+              className="settings__button back"
+            >
+               
+              <FontAwesomeIcon
+                border={false}
+                className=""
+                fixedWidth={false}
+                flip={null}
+                icon="arrow-circle-left"
+                inverse={false}
+                listItem={false}
+                mask={null}
+                pull={null}
+                pulse={false}
+                rotation={null}
+                size={null}
+                spin={false}
+                style={
+                  Object {
+                    "paddingRight": "5px",
+                  }
+                }
+                symbol={false}
+                title=""
+                transform={null}
+              />
+              Powrót
+            </button>
+          </a>
+        </Link>
+        <button
+          className="settings__button save"
+          onClick={[Function]}
+        >
+          zapisz
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon="check-circle"
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            style={
+              Object {
+                "paddingLeft": "5px",
+              }
+            }
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        </button>
+      </div>
+    </Settings>
+  </Router>
+</MemoryRouter>
 `;

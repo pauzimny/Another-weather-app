@@ -1,14 +1,11 @@
-import Settings from "./Settings.js";
 import React from "react";
-import { MemoryRouter } from "react-router-dom";
+import Form from "./Form.js";
 import { shallow, render, mount } from "enzyme";
 import toJson from "enzyme-to-json";
 
 it("renders correctly", () => {
   const wrapper = shallow(
-    <MemoryRouter>
-      <Settings checked={"metric"} onChange={() => {}} onClick={() => {}} />
-    </MemoryRouter>
+    <Form onSubmit={() => {}} value="london" onChange={() => {}} />
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
@@ -16,9 +13,7 @@ it("renders correctly", () => {
 
 it("renders correctly again", () => {
   const wrapper = mount(
-    <MemoryRouter>
-      <Settings checked={"metric"} onChange={() => {}} onClick={() => {}} />
-    </MemoryRouter>
+    <Form onSubmit={() => {}} value="london" onChange={() => {}} />
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();

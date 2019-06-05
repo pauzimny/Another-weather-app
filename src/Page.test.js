@@ -1,6 +1,7 @@
 import Page from "./Page.js";
 import HomePage from "./pages/HomePage.js";
 import Error from "./pages/Error.js";
+import Details from "./pages/Details.js";
 import { MemoryRouter } from "react-router-dom";
 
 import React from "react";
