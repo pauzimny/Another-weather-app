@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Result from "../components/Result.js";
 import Form from "../components/Form.js";
+import ResultHeader from "../components/ResultHeader.js";
 import Message from "../components/Message";
 
 const HomePage = props => {
@@ -113,6 +114,7 @@ const HomePage = props => {
       <Form submit={handleSubmit} change={handleChange} value={input} />
       {error && <Message msg={msg} />}
       {isAlready && <Message msg={msg} />}
+      <ResultHeader />
       <ol className="resultList">{citiesResults}</ol>
     </div>
   );
