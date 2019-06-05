@@ -6,11 +6,12 @@ import Message from "../components/Message";
 const HomePage = props => {
   const APIKEY = "1ea9d8ecd83d43c9a0801ba96a6b4ae1";
   let tempArray = [];
-  let initialResults = JSON.parse(localStorage.getItem("cities")) || [];
+  const changedUnits = localStorage.getItem("units");
+  const initialResults = JSON.parse(localStorage.getItem("cities")) || [];
 
   const [error, setError] = useState(false);
   const [isAlready, setIsAlready] = useState(false);
-  const [units, setUnits] = useState("metric");
+  const [units, setUnits] = useState(changedUnits || "metric");
   const [input, setInput] = useState("");
   const [results, setResults] = useState([...initialResults]);
   const [getData, setGetData] = useState(false);

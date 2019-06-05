@@ -11,7 +11,7 @@ const Page = () => {
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/settings" component={Settings} />
-        <Route path="/details" component={Details} />
+        <Route path="/details/:id" component={Details} />
         <Route exact component={Error} />
       </Switch>
     </React.Fragment>

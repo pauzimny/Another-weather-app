@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -11,6 +11,10 @@ const Settings = props => {
   const [newRes, setNewRes] = useState([]);
 
   let newInput = JSON.parse(localStorage.getItem("cities"));
+
+  useEffect(() => {
+    localStorage.setItem("units", checked);
+  }, [checked]);
 
   const handleCheckedChange = changeEvent => {
     setChecked(changeEvent.target.value);
@@ -86,11 +90,7 @@ const Settings = props => {
       <div className="settings__button-container">
         <Link
           to={{
-            pathname: "/",
-            state: {
-              list: newRes,
-              units: checked
-            }
+            pathname: "/"
           }}
         >
           <button className="settings__button back">

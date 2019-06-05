@@ -15,14 +15,7 @@ const Result = props => {
         <Link
           className="result__city"
           to={{
-            pathname: "/details",
-            state: {
-              city: props.city,
-              lon: props.lon,
-              lat: props.lat,
-              temp: props.temp,
-              units: props.units
-            }
+            pathname: `/details/${props.city}`
           }}
         >
           <span>{props.city}</span>
