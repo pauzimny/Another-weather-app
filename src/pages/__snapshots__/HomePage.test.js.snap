@@ -7,6 +7,7 @@ exports[`renders correctly 1`] = `
     submit={[Function]}
     value=""
   />
+  <ResultHeader />
   <ol
     className="resultList"
   />
@@ -46,6 +47,28 @@ exports[`renders correctly again 1`] = `
       Dodaj miasto
     </button>
   </form>
+  <h4
+    class="result-header"
+  >
+    <span
+      class="result-header__num"
+    >
+      #
+    </span>
+    <span
+      class="result-header__city"
+    >
+      Nazwa miasta
+    </span>
+    <span
+      class="result-header__temp"
+    >
+      Średnia prognozowana temperatura
+    </span>
+    <span
+      class="result-header__delete"
+    />
+  </h4>
   <ol
     class="resultList"
   />

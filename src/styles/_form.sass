@@ -1,24 +1,33 @@
+@import 'breakpoints'
 .form
     display: flex
     justify-content: space-between
     align-items: center
-    width: 90%
-    margin: 0 auto
-    border-bottom: 1px solid #ddd
-    padding: 5vh 0
+    width: 100%
+    margin: 0
+    padding: 0
+    +md
+       width: 90%
+       margin: 0 auto
+
 
 .form__button
-    flex-basis: 30%
-    background-color: #0080ff 
-    padding: 10px 10px
-    color: #fff
-    border-radius: 5px
-    border-color: transparent
-    height: 100%
+    // flex-basis: 30%
+    // background-color: #6695c3
+    // padding: 10px 10px
+    // color: #fff
+    // border-radius: 5px
+    // border-color: transparent
+    // height: 100%
+    // border: 3px solid #6695c3
+    // &:hover
+    //     cursor: pointer
+    //     box-shadow: 0 0 10px #6695c3
 
-.form__input
-    flex-basis: 55%  
-    margin-right: 5%  
-    border: 1px solid #ddd
-    height: 100%
-    padding: 10px 0
+// .form__input
+//     flex-basis: 55%  
+//     margin-right: 5%  
+//     border: 3px solid #6695c3
+//     height: 100%
+//     padding: 10px 0
+//     border-radius: 5px

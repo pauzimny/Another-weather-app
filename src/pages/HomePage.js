@@ -43,6 +43,7 @@ const HomePage = props => {
           })
           .then(data => {
             data.list.forEach(measure => {
+              console.log(measure.main.temp);
               tempArray.push(measure.main.temp);
             });
             const sumTemp = tempArray.reduce((a, b) => a + b, 0);
@@ -110,7 +111,7 @@ const HomePage = props => {
     />
   ));
   return (
-    <div>
+    <div className="home-page">
       <Form submit={handleSubmit} change={handleChange} value={input} />
       {error && <Message msg={msg} />}
       {isAlready && <Message msg={msg} />}

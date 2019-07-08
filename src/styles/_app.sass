@@ -1,15 +1,36 @@
+@import 'breakpoints'
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap')
+
 body
     counter-reset: counter
 
 
 .app
-    min-height: 100vh
+    min-height: 98vh
     max-width: 768px
-  
-    margin: 4vh auto
+    width: 90vw
+    // margin: 4vh auto
+    margin: 1vh auto
+    font-family: 'Roboto', sans-serif
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    +md
+        min-height: 92vh    
+        margin: 4vh auto
+    
 
 
 .app__page
-    width: 90%
-    // padding-left: 5vw
+    width: 100%
+    min-height: 70vh
     margin: 0 auto
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    flex-grow: 1
+    
+
+.home-page
+    justify-self: flex-start
+  

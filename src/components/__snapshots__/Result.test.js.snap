@@ -1,58 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<Fragment>
-  <li
-    className="result"
+<li
+  className="result"
+>
+  <Link
+    className="result__city"
+    to={
+      Object {
+        "pathname": "/details/london",
+      }
+    }
   >
-    <Link
-      className="result__city"
-      to={
+    <span>
+      london
+    </span>
+  </Link>
+  <span
+    className="result__temp"
+  >
+    18
+     
+    °C
+  </span>
+  <button
+    className="result__delete"
+    onClick={[Function]}
+  >
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={false}
+      flip={null}
+      icon="minus-circle"
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      style={
         Object {
-          "pathname": "/details/london",
+          "paddingRight": "5px",
         }
       }
-    >
-      <span>
-        london
-      </span>
-    </Link>
-    <span
-      className="result__temp"
-    >
-      18
-       
-      °C
-    </span>
-    <button
-      className="result__delete"
-      onClick={[Function]}
-    >
-      <FontAwesomeIcon
-        border={false}
-        className=""
-        fixedWidth={false}
-        flip={null}
-        icon="minus-circle"
-        inverse={false}
-        listItem={false}
-        mask={null}
-        pull={null}
-        pulse={false}
-        rotation={null}
-        size={null}
-        spin={false}
-        style={
-          Object {
-            "paddingRight": "5px",
-          }
-        }
-        symbol={false}
-        title=""
-        transform={null}
-      />
-      Usuń
-    </button>
-  </li>
-</Fragment>
+      symbol={false}
+      title=""
+      transform={null}
+    />
+    Usuń
+  </button>
+</li>
 `;

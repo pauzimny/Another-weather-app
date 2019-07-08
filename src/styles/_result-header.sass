@@ -1,23 +1,33 @@
+@import 'breakpoints'
 .result-header
     display: flex
-    justify-content: space-between
-    width: 90%
+    // // justify-content: space-between
+    // justify-content: flex-start
+    // width: 90%
+    // border-bottom: 1px solid #ddd
     margin: 30px auto 0 auto
     padding-bottom: 2vh
     padding-left: 0
+    color: #6695c3
     
 
 .result-header__num
     display: flex
     align-self: center
     flex-basis: 5%
-    padding-left: 10px
+    // padding-left: 10px
+    padding-left: calc(5% + 10px)
+    +rwd(960)
+        padding-left: 10px
 
 .result-header__city
-    flex-basis: 30%
+    flex-basis: 25%
     text-decoration: none
     text-transform: capitalize
     text-align: center
+    align-self: center
+    +rwd(600)
+        flex-basis: 30%
 
 .result-header__temp    
     text-align: left
