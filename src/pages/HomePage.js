@@ -9,7 +9,6 @@ const HomePage = props => {
   let tempArray = [];
   const changedUnits = localStorage.getItem("units");
   const initialResults = JSON.parse(localStorage.getItem("cities")) || [];
-
   const [error, setError] = useState(false);
   const [isAlready, setIsAlready] = useState(false);
   const [units, setUnits] = useState(changedUnits || "metric");
@@ -29,7 +28,6 @@ const HomePage = props => {
       if (index === -1) {
         const API = `https://api.openweathermap.org/data/2.5/forecast?q=${input}&lang=pl&units=${units}&appid=${APIKEY}`;
 
-        console.log(input);
         fetch(API)
           .then(response => {
             if (response.ok) {
@@ -43,7 +41,6 @@ const HomePage = props => {
           })
           .then(data => {
             data.list.forEach(measure => {
-              console.log(measure.main.temp);
               tempArray.push(measure.main.temp);
             });
             const sumTemp = tempArray.reduce((a, b) => a + b, 0);

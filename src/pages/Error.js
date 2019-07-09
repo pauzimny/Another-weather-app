@@ -5,9 +5,6 @@ import KeyboardBackspace from "@material-ui/icons/KeyboardBackspace";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 
-// const Error = () => {
-//   return <div className="error">Sorry,page not found</div>;
-// };
 const useStyles = makeStyles({
   backBtn: { backgroundColor: "#fff", marginRight: 0 },
   detailsCard: {
@@ -31,7 +28,6 @@ const Error = () => {
       </Card>
 
       <section className="settings__footer">
-        {/* <div className="settings__container"> */}
         <div
           style={{
             width: "100%",
@@ -50,7 +46,6 @@ const Error = () => {
               className={classes.backBtn}
               variant="contained"
               size="small"
-              // color="primary"
             >
               <KeyboardBackspace style={{ marginLeft: "5px" }} />
               Powrót

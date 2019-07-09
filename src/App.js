@@ -3,16 +3,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "./styles/style.sass";
 import Options from "./components/Options.js";
 import Page from "./Page.js";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faStroopwafel,
-  faCog,
-  faSearch,
-  faArrowCircleLeft,
-  faCheckCircle
-} from "@fortawesome/free-solid-svg-icons";
-
-library.add(faStroopwafel, faCog, faSearch, faArrowCircleLeft, faCheckCircle);
 
 const App = () => {
   return (

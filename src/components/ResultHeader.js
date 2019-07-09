@@ -9,8 +9,6 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "flex-start",
     width: "100%",
     margin: "10px auto 0 auto",
-    // paddingBottom: "2vh",
-    // paddingLeft: 0,
     color: "#fff",
     backgroundColor: "#ff670e",
     fontWeight: 700,
@@ -28,14 +26,12 @@ const ResultHeader = () => {
   const classes = useStyles();
   return (
     <Paper elevation="8" className={classes.resultHeader}>
-      {/* <h4 className="result-header"> */}
       <span className="result-header__num">#</span>
       <span className="result-header__city">Nazwa miasta</span>
       <span className="result-header__temp">
         Średnia prognozowana temperatura
       </span>
       <span className="result-header__delete" />
-      {/* </h4> */}
     </Paper>
   );
 };

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import KeyboardBackspace from "@material-ui/icons/KeyboardBackspace";
@@ -12,7 +11,6 @@ const useStyles = makeStyles({
     margin: "10px auto",
     width: "80%",
     flexGrow: 1
-    // height: "90%"
   }
 });
 
@@ -45,7 +43,6 @@ const Details = ({ match }) => {
         </ul>
       </Card>
       <section className="settings__footer">
-        {/* <div className="settings__container"> */}
         <div
           style={{
             width: "100%",
@@ -64,7 +61,6 @@ const Details = ({ match }) => {
               className={classes.backBtn}
               variant="contained"
               size="small"
-              // color="primary"
             >
               <KeyboardBackspace style={{ marginLeft: "5px" }} />
               Powrót

@@ -1,56 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<li
-  className="result"
+<WithStyles(ForwardRef(Card))
+  className="makeStyles-card-1"
 >
-  <Link
-    className="result__city"
-    to={
-      Object {
-        "pathname": "/details/london",
-      }
-    }
+  <li
+    className="result"
   >
-    <span>
-      london
-    </span>
-  </Link>
-  <span
-    className="result__temp"
-  >
-    18
-     
-    °C
-  </span>
-  <button
-    className="result__delete"
-    onClick={[Function]}
-  >
-    <FontAwesomeIcon
-      border={false}
-      className=""
-      fixedWidth={false}
-      flip={null}
-      icon="minus-circle"
-      inverse={false}
-      listItem={false}
-      mask={null}
-      pull={null}
-      pulse={false}
-      rotation={null}
-      size={null}
-      spin={false}
-      style={
+    <Link
+      className="result__city"
+      to={
         Object {
-          "paddingRight": "5px",
+          "pathname": "/details/london",
         }
       }
-      symbol={false}
-      title=""
-      transform={null}
-    />
-    Usuń
-  </button>
-</li>
+    >
+      <WithStyles(ForwardRef(Button))
+        className="makeStyles-cityButton-3"
+        color="secondary"
+      >
+        london
+      </WithStyles(ForwardRef(Button))>
+    </Link>
+    <span
+      className="result__temp"
+    >
+      18
+       
+      °C
+    </span>
+    <WithStyles(ForwardRef(Button))
+      className="makeStyles-deleteBtn-2"
+      onClick={[Function]}
+      size="medium"
+      variant="contained"
+    >
+      Usuń
+      <DeleteIcon />
+    </WithStyles(ForwardRef(Button))>
+  </li>
+</WithStyles(ForwardRef(Card))>
 `;

@@ -4,40 +4,40 @@ exports[`renders correctly 1`] = `
 <form
   className="form"
 >
-  <input
-    className="form__input"
-    placeholder=" Nazwa miasta"
-    type="text"
+  <WithStyles(ForwardRef(TextField))
+    InputLabelProps={
+      Object {
+        "style": Object {
+          "color": "#ff680c",
+        },
+      }
+    }
+    InputProps={
+      Object {
+        "className": "makeStyles-input-2",
+      }
+    }
+    className="makeStyles-textField-1"
+    id="standard-with-placeholder"
+    label="Nazwa miasta"
+    margin="normal"
+    placeholder=""
     value="london"
   />
-  <button
-    className="form__button"
+  <WithStyles(ForwardRef(Button))
+    className="makeStyles-addButton-3"
+    size="medium"
+    variant="contained"
   >
-    <FontAwesomeIcon
-      border={false}
-      className=""
-      fixedWidth={false}
-      flip={null}
-      icon="search"
-      inverse={false}
-      listItem={false}
-      mask={null}
-      pull={null}
-      pulse={false}
-      rotation={null}
-      size={null}
-      spin={false}
+    Dodaj miasto
+    <SearchIcon
       style={
         Object {
-          "paddingRight": "5px",
+          "marginLeft": "5px",
         }
       }
-      symbol={false}
-      title=""
-      transform={null}
     />
-    Dodaj miasto
-  </button>
+  </WithStyles(ForwardRef(Button))>
 </form>
 `;
 
@@ -50,62 +50,518 @@ exports[`renders correctly again 1`] = `
   <form
     className="form"
   >
-    <input
-      className="form__input"
-      placeholder=" Nazwa miasta"
-      type="text"
+    <WithStyles(ForwardRef(TextField))
+      InputLabelProps={
+        Object {
+          "style": Object {
+            "color": "#ff680c",
+          },
+        }
+      }
+      InputProps={
+        Object {
+          "className": "makeStyles-input-2",
+        }
+      }
+      className="makeStyles-textField-1"
+      id="standard-with-placeholder"
+      label="Nazwa miasta"
+      margin="normal"
+      placeholder=""
       value="london"
-    />
-    <button
-      className="form__button"
     >
-      <FontAwesomeIcon
-        border={false}
-        className=""
-        fixedWidth={false}
-        flip={null}
-        icon="search"
-        inverse={false}
-        listItem={false}
-        mask={null}
-        pull={null}
-        pulse={false}
-        rotation={null}
-        size={null}
-        spin={false}
-        style={
+      <ForwardRef(TextField)
+        InputLabelProps={
           Object {
-            "paddingRight": "5px",
+            "style": Object {
+              "color": "#ff680c",
+            },
           }
         }
-        symbol={false}
-        title=""
-        transform={null}
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-search fa-w-16 "
-          data-icon="search"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "paddingRight": "5px",
-            }
+        InputProps={
+          Object {
+            "className": "makeStyles-input-2",
           }
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
+        }
+        className="makeStyles-textField-1"
+        classes={
+          Object {
+            "root": "MuiTextField-root",
+          }
+        }
+        id="standard-with-placeholder"
+        label="Nazwa miasta"
+        margin="normal"
+        placeholder=""
+        value="london"
+      >
+        <WithStyles(ForwardRef(FormControl))
+          className="MuiTextField-root makeStyles-textField-1"
+          margin="normal"
+          required={false}
+          variant="standard"
         >
-          <path
-            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </FontAwesomeIcon>
-      Dodaj miasto
-    </button>
+          <ForwardRef(FormControl)
+            className="MuiTextField-root makeStyles-textField-1"
+            classes={
+              Object {
+                "fullWidth": "MuiFormControl-fullWidth",
+                "marginDense": "MuiFormControl-marginDense",
+                "marginNormal": "MuiFormControl-marginNormal",
+                "root": "MuiFormControl-root",
+              }
+            }
+            margin="normal"
+            required={false}
+            variant="standard"
+          >
+            <div
+              className="MuiFormControl-root MuiTextField-root makeStyles-textField-1 MuiFormControl-marginNormal"
+            >
+              <WithStyles(WithFormControlContext(ForwardRef(InputLabel)))
+                htmlFor="standard-with-placeholder"
+                style={
+                  Object {
+                    "color": "#ff680c",
+                  }
+                }
+              >
+                <WithFormControlContext(ForwardRef(InputLabel))
+                  classes={
+                    Object {
+                      "animated": "MuiInputLabel-animated",
+                      "asterisk": "MuiInputLabel-asterisk",
+                      "disabled": "Mui-disabled",
+                      "error": "Mui-error",
+                      "filled": "MuiInputLabel-filled",
+                      "focused": "Mui-focused",
+                      "formControl": "MuiInputLabel-formControl",
+                      "marginDense": "MuiInputLabel-marginDense",
+                      "outlined": "MuiInputLabel-outlined",
+                      "required": "Mui-required",
+                      "root": "MuiInputLabel-root",
+                      "shrink": "MuiInputLabel-shrink",
+                    }
+                  }
+                  htmlFor="standard-with-placeholder"
+                  style={
+                    Object {
+                      "color": "#ff680c",
+                    }
+                  }
+                >
+                  <ForwardRef(InputLabel)
+                    classes={
+                      Object {
+                        "animated": "MuiInputLabel-animated",
+                        "asterisk": "MuiInputLabel-asterisk",
+                        "disabled": "Mui-disabled",
+                        "error": "Mui-error",
+                        "filled": "MuiInputLabel-filled",
+                        "focused": "Mui-focused",
+                        "formControl": "MuiInputLabel-formControl",
+                        "marginDense": "MuiInputLabel-marginDense",
+                        "outlined": "MuiInputLabel-outlined",
+                        "required": "Mui-required",
+                        "root": "MuiInputLabel-root",
+                        "shrink": "MuiInputLabel-shrink",
+                      }
+                    }
+                    htmlFor="standard-with-placeholder"
+                    muiFormControl={
+                      Object {
+                        "adornedStart": false,
+                        "disabled": false,
+                        "error": false,
+                        "filled": true,
+                        "focused": false,
+                        "margin": "normal",
+                        "onBlur": [Function],
+                        "onEmpty": [Function],
+                        "onFilled": [Function],
+                        "onFocus": [Function],
+                        "required": false,
+                        "variant": "standard",
+                      }
+                    }
+                    style={
+                      Object {
+                        "color": "#ff680c",
+                      }
+                    }
+                  >
+                    <WithStyles(WithFormControlContext(ForwardRef(FormLabel)))
+                      className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                      classes={
+                        Object {
+                          "asterisk": "MuiInputLabel-asterisk",
+                          "disabled": "Mui-disabled",
+                          "error": "Mui-error",
+                          "focused": "Mui-focused",
+                          "required": "Mui-required",
+                        }
+                      }
+                      data-shrink={true}
+                      htmlFor="standard-with-placeholder"
+                      style={
+                        Object {
+                          "color": "#ff680c",
+                        }
+                      }
+                    >
+                      <WithFormControlContext(ForwardRef(FormLabel))
+                        className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                        classes={
+                          Object {
+                            "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
+                            "disabled": "Mui-disabled Mui-disabled",
+                            "error": "Mui-error Mui-error",
+                            "filled": "MuiFormLabel-filled",
+                            "focused": "Mui-focused Mui-focused",
+                            "required": "Mui-required Mui-required",
+                            "root": "MuiFormLabel-root",
+                          }
+                        }
+                        data-shrink={true}
+                        htmlFor="standard-with-placeholder"
+                        style={
+                          Object {
+                            "color": "#ff680c",
+                          }
+                        }
+                      >
+                        <ForwardRef(FormLabel)
+                          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                          classes={
+                            Object {
+                              "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
+                              "disabled": "Mui-disabled Mui-disabled",
+                              "error": "Mui-error Mui-error",
+                              "filled": "MuiFormLabel-filled",
+                              "focused": "Mui-focused Mui-focused",
+                              "required": "Mui-required Mui-required",
+                              "root": "MuiFormLabel-root",
+                            }
+                          }
+                          data-shrink={true}
+                          htmlFor="standard-with-placeholder"
+                          muiFormControl={
+                            Object {
+                              "adornedStart": false,
+                              "disabled": false,
+                              "error": false,
+                              "filled": true,
+                              "focused": false,
+                              "margin": "normal",
+                              "onBlur": [Function],
+                              "onEmpty": [Function],
+                              "onFilled": [Function],
+                              "onFocus": [Function],
+                              "required": false,
+                              "variant": "standard",
+                            }
+                          }
+                          style={
+                            Object {
+                              "color": "#ff680c",
+                            }
+                          }
+                        >
+                          <label
+                            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+                            data-shrink={true}
+                            htmlFor="standard-with-placeholder"
+                            style={
+                              Object {
+                                "color": "#ff680c",
+                              }
+                            }
+                          >
+                            Nazwa miasta
+                          </label>
+                        </ForwardRef(FormLabel)>
+                      </WithFormControlContext(ForwardRef(FormLabel))>
+                    </WithStyles(WithFormControlContext(ForwardRef(FormLabel)))>
+                  </ForwardRef(InputLabel)>
+                </WithFormControlContext(ForwardRef(InputLabel))>
+              </WithStyles(WithFormControlContext(ForwardRef(InputLabel)))>
+              <WithStyles(ForwardRef(Input))
+                className="makeStyles-input-2"
+                id="standard-with-placeholder"
+                placeholder=""
+                value="london"
+              >
+                <ForwardRef(Input)
+                  className="makeStyles-input-2"
+                  classes={
+                    Object {
+                      "disabled": "Mui-disabled",
+                      "error": "Mui-error",
+                      "focused": "Mui-focused",
+                      "formControl": "MuiInput-formControl",
+                      "fullWidth": "MuiInput-fullWidth",
+                      "input": "MuiInput-input",
+                      "inputMarginDense": "MuiInput-inputMarginDense",
+                      "inputMultiline": "MuiInput-inputMultiline",
+                      "inputTypeSearch": "MuiInput-inputTypeSearch",
+                      "multiline": "MuiInput-multiline",
+                      "root": "MuiInput-root",
+                      "underline": "MuiInput-underline",
+                    }
+                  }
+                  id="standard-with-placeholder"
+                  placeholder=""
+                  value="london"
+                >
+                  <WithStyles(ForwardRef(InputBase))
+                    className="makeStyles-input-2"
+                    classes={
+                      Object {
+                        "disabled": "Mui-disabled",
+                        "error": "Mui-error",
+                        "focused": "Mui-focused",
+                        "formControl": "MuiInput-formControl",
+                        "fullWidth": "MuiInput-fullWidth",
+                        "input": "MuiInput-input",
+                        "inputMarginDense": "MuiInput-inputMarginDense",
+                        "inputMultiline": "MuiInput-inputMultiline",
+                        "inputTypeSearch": "MuiInput-inputTypeSearch",
+                        "multiline": "MuiInput-multiline",
+                        "root": "MuiInput-root MuiInput-underline",
+                        "underline": null,
+                      }
+                    }
+                    fullWidth={false}
+                    id="standard-with-placeholder"
+                    inputComponent="input"
+                    multiline={false}
+                    placeholder=""
+                    type="text"
+                    value="london"
+                  >
+                    <ForwardRef(InputBase)
+                      className="makeStyles-input-2"
+                      classes={
+                        Object {
+                          "adornedEnd": "MuiInputBase-adornedEnd",
+                          "adornedStart": "MuiInputBase-adornedStart",
+                          "disabled": "Mui-disabled Mui-disabled",
+                          "error": "Mui-error Mui-error",
+                          "focused": "Mui-focused Mui-focused",
+                          "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                          "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                          "input": "MuiInputBase-input MuiInput-input",
+                          "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                          "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                          "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                          "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                          "inputSelect": "MuiInputBase-inputSelect",
+                          "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                          "marginDense": "MuiInputBase-marginDense",
+                          "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                          "root": "MuiInputBase-root MuiInput-root MuiInput-underline",
+                        }
+                      }
+                      fullWidth={false}
+                      id="standard-with-placeholder"
+                      inputComponent="input"
+                      multiline={false}
+                      placeholder=""
+                      type="text"
+                      value="london"
+                    >
+                      <div
+                        className="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-input-2 MuiInputBase-formControl MuiInput-formControl"
+                        onClick={[Function]}
+                      >
+                        <input
+                          aria-invalid={false}
+                          className="MuiInputBase-input MuiInput-input"
+                          disabled={false}
+                          id="standard-with-placeholder"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          placeholder=""
+                          required={false}
+                          type="text"
+                          value="london"
+                        />
+                      </div>
+                    </ForwardRef(InputBase)>
+                  </WithStyles(ForwardRef(InputBase))>
+                </ForwardRef(Input)>
+              </WithStyles(ForwardRef(Input))>
+            </div>
+          </ForwardRef(FormControl)>
+        </WithStyles(ForwardRef(FormControl))>
+      </ForwardRef(TextField)>
+    </WithStyles(ForwardRef(TextField))>
+    <WithStyles(ForwardRef(Button))
+      className="makeStyles-addButton-3"
+      size="medium"
+      variant="contained"
+    >
+      <ForwardRef(Button)
+        className="makeStyles-addButton-3"
+        classes={
+          Object {
+            "colorInherit": "MuiButton-colorInherit",
+            "contained": "MuiButton-contained",
+            "containedPrimary": "MuiButton-containedPrimary",
+            "containedSecondary": "MuiButton-containedSecondary",
+            "disabled": "Mui-disabled",
+            "focusVisible": "Mui-focusVisible",
+            "fullWidth": "MuiButton-fullWidth",
+            "label": "MuiButton-label",
+            "outlined": "MuiButton-outlined",
+            "outlinedPrimary": "MuiButton-outlinedPrimary",
+            "outlinedSecondary": "MuiButton-outlinedSecondary",
+            "root": "MuiButton-root",
+            "sizeLarge": "MuiButton-sizeLarge",
+            "sizeSmall": "MuiButton-sizeSmall",
+            "text": "MuiButton-text",
+            "textPrimary": "MuiButton-textPrimary",
+            "textSecondary": "MuiButton-textSecondary",
+          }
+        }
+        size="medium"
+        variant="contained"
+      >
+        <WithStyles(ForwardRef(ButtonBase))
+          className="MuiButton-root makeStyles-addButton-3 MuiButton-contained"
+          component="button"
+          disabled={false}
+          focusRipple={true}
+          focusVisibleClassName="Mui-focusVisible"
+          type="button"
+        >
+          <ForwardRef(ButtonBase)
+            className="MuiButton-root makeStyles-addButton-3 MuiButton-contained"
+            classes={
+              Object {
+                "disabled": "Mui-disabled",
+                "focusVisible": "Mui-focusVisible",
+                "root": "MuiButtonBase-root",
+              }
+            }
+            component="button"
+            disabled={false}
+            focusRipple={true}
+            focusVisibleClassName="Mui-focusVisible"
+            type="button"
+          >
+            <button
+              className="MuiButtonBase-root MuiButton-root makeStyles-addButton-3 MuiButton-contained"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              type="button"
+            >
+              <span
+                className="MuiButton-label"
+              >
+                Dodaj miasto
+                <ForwardRef
+                  style={
+                    Object {
+                      "marginLeft": "5px",
+                    }
+                  }
+                >
+                  <WithStyles(ForwardRef(SvgIcon))
+                    style={
+                      Object {
+                        "marginLeft": "5px",
+                      }
+                    }
+                  >
+                    <ForwardRef(SvgIcon)
+                      classes={
+                        Object {
+                          "colorAction": "MuiSvgIcon-colorAction",
+                          "colorDisabled": "MuiSvgIcon-colorDisabled",
+                          "colorError": "MuiSvgIcon-colorError",
+                          "colorPrimary": "MuiSvgIcon-colorPrimary",
+                          "colorSecondary": "MuiSvgIcon-colorSecondary",
+                          "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                          "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                          "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                          "root": "MuiSvgIcon-root",
+                        }
+                      }
+                      style={
+                        Object {
+                          "marginLeft": "5px",
+                        }
+                      }
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="MuiSvgIcon-root"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "marginLeft": "5px",
+                          }
+                        }
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                        />
+                      </svg>
+                    </ForwardRef(SvgIcon)>
+                  </WithStyles(ForwardRef(SvgIcon))>
+                </ForwardRef>
+              </span>
+              <NoSsr>
+                <WithStyles(TouchRipple)
+                  center={false}
+                >
+                  <TouchRipple
+                    center={false}
+                    classes={
+                      Object {
+                        "child": "MuiTouchRipple-child",
+                        "childLeaving": "MuiTouchRipple-childLeaving",
+                        "childPulsate": "MuiTouchRipple-childPulsate",
+                        "ripple": "MuiTouchRipple-ripple",
+                        "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                        "rippleVisible": "MuiTouchRipple-rippleVisible",
+                        "root": "MuiTouchRipple-root",
+                      }
+                    }
+                  >
+                    <span
+                      className="MuiTouchRipple-root"
+                    >
+                      <TransitionGroup
+                        childFactory={[Function]}
+                        component={null}
+                        enter={true}
+                        exit={true}
+                      />
+                    </span>
+                  </TouchRipple>
+                </WithStyles(TouchRipple)>
+              </NoSsr>
+            </button>
+          </ForwardRef(ButtonBase)>
+        </WithStyles(ForwardRef(ButtonBase))>
+      </ForwardRef(Button)>
+    </WithStyles(ForwardRef(Button))>
   </form>
 </Form>
 `;
