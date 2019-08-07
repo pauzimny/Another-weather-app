@@ -4,7 +4,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   msgCard: {
-    backgroundColor: "#960c27"
+    backgroundColor: "#960c27",
+    padding: "0 10px"
   }
 });
 

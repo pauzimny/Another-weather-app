@@ -16,14 +16,13 @@ const useStyles = makeStyles({
 
 const Details = ({ match }) => {
   const classes = useStyles();
-
   const cities = JSON.parse(localStorage.getItem("cities"));
   const index = cities.findIndex(city => city.id === match.params.id);
 
   return (
     <div className="details">
-      <Card raised="true" className={classes.detailsCard}>
-        <h2 className="details__city">{cities[index].name}</h2>
+      <Card raised={true} className={classes.detailsCard}>
+        <h2 className="details__city">{cities[index].id}</h2>
         <ul className="details__list">
           <li className="details__details">
             <span className="details__label">szerokość geograficzna</span>

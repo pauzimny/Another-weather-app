@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 const ResultHeader = () => {
   const classes = useStyles();
   return (
-    <Paper elevation="8" className={classes.resultHeader}>
+    <Paper elevation={8} className={classes.resultHeader}>
       <span className="result-header__num">#</span>
       <span className="result-header__city">Nazwa miasta</span>
       <span className="result-header__temp">
